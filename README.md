@@ -1,2 +1,12 @@
-# playgame
-Playgame about page
+## Playgame
+
+> About Playgame page
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:3000
+npm start
