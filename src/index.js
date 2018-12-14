@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { Text } from './components/common/Text'
+import { Container, Text } from './components/common'
 
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <Container fluid>
         <Text>Normal Text</Text>        
         <Text h1>h1 Text</Text> 
         <Text h2>h2 Text</Text> 
@@ -17,7 +17,7 @@ export default class App extends Component {
         <Text h3 bold>H3 Bold Text</Text> 
         <Text h3 italic>H3 Italic Text</Text> 
         <Text h3 bold italic>H3 Bold Italic Text</Text> 
-      </div>
+      </Container>
     )
   }
 }
