@@ -4,7 +4,7 @@
   "description": "Playgame about page",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --content-base './dist' --hot true --port 3000"
+    "start": "webpack-dev-server --content-base './public' --hot true --port 3000"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
+    "babel-plugin-styled-components": "^1.9.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "webpack": "^4.27.1",
@@ -29,7 +30,9 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "styled-components": "^4.1.2"
   }
 }
