@@ -50,6 +50,9 @@ export const Text = styled.div`
     font-style: normal;
     font-weight: normal;
     color: ${props => props.color || STYLES.color.text};
+    text-align: ${props => props.align || 'left'};
+    justify-content: center;
+    
     ${text}
     ${textItalic}
     ${textWeight}

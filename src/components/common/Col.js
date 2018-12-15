@@ -145,6 +145,9 @@ export const Col = styled.div`
     -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
 
     @media (min-width: 576px) {
         ${(props) => smFlex(props)};
