@@ -139,6 +139,7 @@ export const lgFlex = (props) => {
     `
 }
 
+
 export const Col = styled.div`
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -148,8 +149,9 @@ export const Col = styled.div`
     padding-right: 15px;
     padding-left: 15px;
     position: relative;
+    ${(props) => smFlex(props)};
 
-    @media (min-width: 576px) {
+    @media (min-width: 576px){
         ${(props) => smFlex(props)};
     }
     @media (min-width: 768px) {
