@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import STYLES from '../../constants/styles';
+import STYLES from '../../constants/styles'
 
 const containerFluid = (props) => {
     if (props.fluid) {
