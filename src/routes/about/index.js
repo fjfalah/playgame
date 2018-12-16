@@ -1,8 +1,8 @@
-import BrandSection from './components/brandSection/BrandSection'
-import GameSection from './components/gameSection/GameSection'
-import PgNewsSection from './components/pgNewsSection'
-import PgTimelineSection from './components/pgTimelineSection'
-import PgWorksSection from './components/pgWorksSection'
+import BrandSection from './components/brandSection'
+import WorksSection from './components/worksSection'
+import GameSection from './components/gameSection'
+import NewsSection from './components/newsSection'
+import TimelineSection from './components/timelineSection'
 
 import React, { Component } from 'react'
 
@@ -11,9 +11,9 @@ export default class About extends Component {
     return (
       <div>
           <BrandSection />
-          {/* <PgWorksSection />
-          <PgNewsSection />
-          <PgTimelineSection /> */}
+          <WorksSection />
+          <NewsSection />
+          <TimelineSection />
           <GameSection />
       </div>
     )

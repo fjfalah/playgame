@@ -1,12 +1,22 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import { Row, Col, Text, Button } from '../../../../components/common';
 import STYLES from '../../../../constants/styles'
 import TeleBox from './TeleBox';
+import img from '../../../../assets/images/img_bg_about.png'
+
+const Wrapper = styled.section`
+    background-image: url(${img});
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    padding-top: 100px;
+`
 
 export default class BrandSection extends Component {
     render() {
         return (
-            <div className="brandSection">
+            <Wrapper>
                 <Row>
                     <Col sm={12}>
                         <Text h1 align="center">
@@ -36,7 +46,7 @@ export default class BrandSection extends Component {
                         </Text>
                     </Col>
                 </Row>
-            </div>
+            </Wrapper>
         )
     }
 }

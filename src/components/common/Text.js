@@ -46,10 +46,10 @@ const textWeight = (props) => {
 }
 
 export const Text = styled.div`
-    font-family: ${props => props.fontFamily || 'Rubik'}
+    font-family: ${props => props.fontFamily || 'Rubik'};
     font-size: ${props => props.size || '14px' };
     font-style: normal;
-    font-weight: ${props => props.weight || 300}
+    font-weight: ${props => props.weight || 300};
     color: ${props => props.color || STYLES.color.text};
     text-align: ${props => props.align || 'left'};
     justify-content: center;

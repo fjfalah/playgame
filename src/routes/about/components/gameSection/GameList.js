@@ -9,17 +9,19 @@ const Wrapper = styled.div`
   padding: 20px;
 `
 const ListWrapper = styled.div`
+  display: flex;
   padding: 10px 20px;
   margin: 0 -20px 10px -20px;
   overflow-x: auto;
   white-space: nowrap;
 `
 
-const ButtonMoreGames = styled.a`
+const MoreGamesButton = styled.a`
   display: flex;
   justify-content: flex-end;
   color: #FF9532;
   text-decoration: none;
+  font-weight: 500;
 `
 
 class GameList extends Component {
@@ -47,9 +49,9 @@ class GameList extends Component {
         <ListWrapper>
           {gameList}
         </ListWrapper>
-        <ButtonMoreGames href="#">
+        <MoreGamesButton href="#">
           MORE GAMES >
-        </ButtonMoreGames>
+        </MoreGamesButton>
       </Wrapper>
       
     )

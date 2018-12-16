@@ -1,22 +1,18 @@
 import React, { Component } from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
+import { Button } from '../../../../components/common';
 
 const Card = styled.div`
-  width: 164px;
-  height: 280px;
+  width: 300px;
+  height: 370px;
   display: inline-block;
   margin-right: 10px;
   background: #ffffff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0639719);
-  border-radius: 15px;
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0639719); */
 `
 
 const ImageWrapper = styled.div`
-  height: 164px;
-  width: 164px;
-  background: #f4f4f4;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  width: 300px;
   overflow: hidden;
 `
 
@@ -28,34 +24,32 @@ const TextWrapper = styled.div`
   padding: 10px;
 `
 
-const Title = styled.h4`
-  margin: 5px 0;
-`
-
 const Desc = styled.p`
   white-space: normal;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 60px;
   margin: 5px 0;
 `
 
-export default class GameCard extends Component {
+const ReadMoreButton = styled(Button)`
+  margin: 0;
+  padding: 7px 20px;
+`
 
+
+export default class NewsCard extends Component {
   render() {
-    const { image, title, desc } = this.props
+    const { image, desc } = this.props
     return (
       <Card>
         <ImageWrapper>
           <Image src={image} />
         </ImageWrapper>
         <TextWrapper>
-          <Title>
-            {title}
-          </Title>
           <Desc>
             {desc}
           </Desc>
+          <ReadMoreButton orange outline small>
+            READ MORE
+            </ReadMoreButton>
         </TextWrapper>
       </Card>
     )
