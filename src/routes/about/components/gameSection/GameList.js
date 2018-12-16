@@ -7,6 +7,7 @@ import STYLES from '../../../../constants/styles'
 
 const Wrapper = styled.div`
   padding: 20px;
+  padding-top: 56px;
 `
 const ListWrapper = styled.div`
   display: flex;

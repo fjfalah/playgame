@@ -14,6 +14,7 @@ const ActionTitle = styled.h2`
     text-align: center;
     font-size: 36px;
     font-weight: 500;
+    margin-block-start: 0;
 `
 const ButtonPlayGame = styled(Button)`
     padding: 15px 90px;

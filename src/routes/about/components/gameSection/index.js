@@ -7,6 +7,7 @@ import ActionButton from './ActionButton';
 
 const Wrapper = styled.div`
     background: #F8F8F8;
+    border-top: 1px solid #EEEEEE;
 `
 
 export default class GameSection extends Component {

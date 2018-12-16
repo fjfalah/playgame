@@ -8,7 +8,6 @@ const Card = styled.div`
   display: inline-block;
   margin-right: 10px;
   background: #ffffff;
-  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0639719); */
 `
 
 const ImageWrapper = styled.div`
