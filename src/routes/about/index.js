@@ -1,5 +1,5 @@
-import PgBrandSection from './components/pgBrandSection'
-import PgGameSection from './components/pgGameSection'
+import BrandSection from './components/brandSection/BrandSection'
+import GameSection from './components/gameSection/GameSection'
 import PgNewsSection from './components/pgNewsSection'
 import PgTimelineSection from './components/pgTimelineSection'
 import PgWorksSection from './components/pgWorksSection'
@@ -10,11 +10,11 @@ export default class About extends Component {
   render() {
     return (
       <div>
-          <PgBrandSection />
-          <PgWorksSection />
+          <BrandSection />
+          {/* <PgWorksSection />
           <PgNewsSection />
-          <PgTimelineSection />
-          <PgGameSection />
+          <PgTimelineSection /> */}
+          <GameSection />
       </div>
     )
   }

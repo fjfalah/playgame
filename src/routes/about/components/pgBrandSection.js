@@ -18,9 +18,9 @@ export default class PgBrandSection extends Component {
                 </Row>
                 <Row>
                     <Col sm={12}>
-                        <Text h4 align="center" styles={{ marginTop: '50', }}>
-                            <img src="../../../assets/images/img_bg_about.png" />
-                            JOIN OUR TELEGRAM
+                        <Text h4 align="center">
+                            {/* <img src={require("../../../assets/images/img_bg_about.png")} /> */}
+                            JOIN OUR TELEGRAMss
                         </Text>
                     </Col>
                 </Row>
@@ -31,12 +31,12 @@ export default class PgBrandSection extends Component {
                                 <Text weight="500" align="center">GROUP</Text>
                                 <Row>
                                     <Col md={6}>
-                                        <Button blue outline block>
+                                        <Button blue outline block small>
                                             ENG
                                         </Button>
                                     </Col>
                                     <Col md={6}>
-                                        <Button blue outline block>
+                                        <Button blue outline block small>
                                             IND
                                         </Button>
                                     </Col>
@@ -46,7 +46,7 @@ export default class PgBrandSection extends Component {
                                 <Text weight="500" align="center">CHANNEL</Text>
                                 <Row>
                                     <Col md={12}>
-                                        <Button orange outline block>
+                                        <Button blue outline block small>
                                             PLAYGAMEICO
                                         </Button>
                                     </Col>

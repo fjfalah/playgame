@@ -59,6 +59,20 @@ const buttonBlock = (props) => {
             display: block;
             width: 100%;
             marginTop: 5px;
+            margin-left: 0;
+            margin-right: 0;
+        `
+    }
+}
+
+const buttonSize = (props) => {
+    if (props.large) {
+        return css`
+            padding: 20px 20px
+        `
+    } else if (props.small) {
+        return css`
+            padding: 10px 20px
         `
     }
 }
@@ -74,8 +88,8 @@ export const Button = styled.button`
     color: ${STYLES.color.white};
     background-color: ${STYLES.color.orange};
     border-color: ${STYLES.color.orange};
-    padding: 10px 20px;
-    margin: 0 3px;
+    padding: 15px 20px;
+    margin: 3px;
     outline: 0;
     user-select: none;
     transition: all .3s
@@ -90,4 +104,5 @@ export const Button = styled.button`
     ${buttonOrange}
     ${buttonBlue}
     ${buttonBlock}
+    ${buttonSize}
 `
