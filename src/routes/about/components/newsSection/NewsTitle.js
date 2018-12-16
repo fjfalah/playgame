@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Text, Row } from '../../../../components/common'
+import { Text } from '../../../../components/common'
 import STYLES from '../../../../constants/styles';
 
 const NewsTitleWrapper = styled.div`
@@ -38,7 +38,7 @@ export default class NewsTitle extends Component {
         <TitleWrapper>
           <Title size="36px" align="right" weight="bold">
             PLAYGAME
-        </Title>
+          </Title>
           <Title size="36px" align="right" weight="bold" color={STYLES.color.orange}>
             NEWS
         </Title>
