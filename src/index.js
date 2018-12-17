@@ -4,7 +4,8 @@ import { Container, Text, Row, Col } from './components/common'
 import About from './routes/about';
 import { Provider } from 'react-redux'
 import store from './store'
-import Header from './components/Header/Header';
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 
 export default class App extends Component {
@@ -13,6 +14,7 @@ export default class App extends Component {
             <Container fluid>
                 <Header />
                 <About />
+                <Footer />
             </Container>
         )
     }
