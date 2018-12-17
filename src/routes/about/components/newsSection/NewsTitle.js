@@ -7,15 +7,29 @@ const NewsTitleWrapper = styled.div`
   display: flex;
   justify-content: center;
   padding: 40px 0;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    padding: 20px 0;
+  }
 `
 const TitleWrapper = styled.div`
   flex: 1;
   flex-direction: column;
   padding: 20px;
+
+  @media (max-width: 576px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 `
 
 const Title = styled(Text)`
   line-height: 1;
+
+  @media (max-width: 576px) {
+    text-align: center;
+  }
 `
 
 const MoreNewsWrapper = styled.div`
@@ -24,6 +38,10 @@ const MoreNewsWrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
   padding: 20px;
+
+  @media (max-width: 576px) {
+    padding: 0 20px;
+  }
 `
 
 const MoreNewsButton = styled.a`
@@ -41,7 +59,7 @@ export default class NewsTitle extends Component {
           </Title>
           <Title size="36px" align="right" weight="bold" color={STYLES.color.orange}>
             NEWS
-        </Title>
+          </Title>
         </TitleWrapper>
         <MoreNewsWrapper>
           <MoreNewsButton href="#">

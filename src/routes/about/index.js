@@ -1,21 +1,24 @@
+import React, { Component } from 'react'
 import BrandSection from './components/brandSection'
 import WorksSection from './components/worksSection'
 import GameSection from './components/gameSection'
 import NewsSection from './components/newsSection'
 import TimelineSection from './components/timelineSection'
+import styled from 'styled-components'
 
-import React, { Component } from 'react'
+const Wrapper = styled.div`
 
+`
 export default class About extends Component {
   render() {
     return (
-      <div>
+      <Wrapper>
           <BrandSection />
           <WorksSection />
           <NewsSection />
           <TimelineSection />
           <GameSection />
-      </div>
+      </Wrapper>
     )
   }
 }

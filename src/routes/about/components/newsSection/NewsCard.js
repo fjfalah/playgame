@@ -30,7 +30,6 @@ const Desc = styled.p`
 
 const ReadMoreButton = styled(Button)`
   margin: 0;
-  padding: 7px 20px;
 `
 
 

@@ -6,13 +6,17 @@ import GameCard from './GameCard'
 import STYLES from '../../../../constants/styles'
 
 const Wrapper = styled.div`
-  padding: 20px;
+  padding: 20px 0;
   padding-top: 56px;
+
+  @media (max-width: 576px) {
+    padding: 20px 0;
+  }
 `
 const ListWrapper = styled.div`
   display: flex;
   padding: 10px 20px;
-  margin: 0 -20px 10px -20px;
+  /* margin: 0 -20px 10px -20px; */
   overflow-x: auto;
   white-space: nowrap;
 `
@@ -23,6 +27,7 @@ const MoreGamesButton = styled.a`
   color: #FF9532;
   text-decoration: none;
   font-weight: 500;
+  padding: 20px;
 `
 
 class GameList extends Component {

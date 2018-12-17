@@ -2,10 +2,11 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Card = styled.div`
-  width: 300px;
+  width: 200px;
   height: 200px;
   display: inline-block;
   background: #ffffff;
+
 `
 
 const Line = styled.div`
@@ -32,6 +33,7 @@ const CalendarLine = styled.div`
 
 const TextWrapper = styled.div`
   padding: 20px;
+  width: 200px;
 `
 
 const Date = styled.h4`

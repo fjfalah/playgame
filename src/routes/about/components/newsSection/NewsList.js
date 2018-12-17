@@ -4,10 +4,10 @@ import NewsCard from './NewsCard';
 
 const NewsListWrapper = styled.div`
   display: flex;
-  padding: 0 20px 20px 20px;
-  margin: 0 -20px 10px -20px;
+  flex-wrap: nowrap;
+  padding: 0;
   overflow-x: auto;
-  white-space: nowrap;
+  overflow-y: hidden;
 `
 
 const newsData = [

@@ -6,16 +6,29 @@ const TimelineTitleWrapper = styled.div`
     display: flex;
     justify-content: center;
     padding: 40px 0;
+
+    @media (max-width: 576px) {
+      padding: 20px 0;
+      flex-direction: column;
+    }
 `
 
 const TitleWrapper = styled.div`
     flex: 1;
     flex-direction: column;
     padding: 20px;
+
+    @media (max-width: 576px) {
+      padding: 0 20px;
+    }
 `
 
 const Title = styled(Text)`
     line-height: 1;
+
+    @media (max-width: 576px) {
+      text-align: center;
+    }
 `
 
 const TitleRightWrapper = styled.div`
@@ -24,6 +37,10 @@ const TitleRightWrapper = styled.div`
     justify-content: center;
     align-items: center;
     padding: 20px;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
 `
 
 const TitleTimelineMonth = styled.div`
@@ -34,6 +51,11 @@ const MoreEventsWrapper = styled.div`
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  padding: 20px 0;
+
+  @media (max-width: 576px) {
+    align-self: flex-end;
+  }
 `
 const MoreEventsButton = styled.a`
   color: #FF9532;

@@ -5,20 +5,58 @@ import { Row, Col, Text, Button } from '../../../../components/common'
 
 
 const Wrapper = styled.div`
-    padding-top: 100px;
-    padding-bottom: 50px; 
+  padding: 40px 10px;
 `
-const ButtonWrapper = styled(Row)`
-    padding: 20px 0;
+const Title = styled(Text)`
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 5px 0;
+`
+const TeleTitleWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
-const GroupTitle = styled.div`
-    padding: 10px 0;
+const TeleTitle = styled(Text)`
+  margin-block-start: 0;
+  margin-block-end: 0;
 `
 
-const ChannelTitle = styled.div`
-    padding: 10px 0;
- `
+const TeleImage = styled.img`
+  padding: 10px;
+`
+
+const ActionWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  @media (max-width: 576px){
+    flex-direction: column;
+    align-items: stretch;
+
+  }
+`
+
+const GroupWrapper = styled.div`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+`
+
+const ChannelWrapper = styled(GroupWrapper)``
+const GroupButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 576px){
+    flex-direction: column;
+  }
+`
+
+const ChannelButtonWrapper = styled(GroupButtonWrapper)``
 
 
 export default class TeleBox extends Component {
@@ -26,49 +64,41 @@ export default class TeleBox extends Component {
   render() {
     return (
       <Wrapper>
-            <Row>
-                <Col sm={12}>
-                    <Text h4 align="center">
-                        {/* <img src={require("../../../assets/images/img_bg_about.png")} /> */}
-                        JOIN OUR TELEGRAM
-                    </Text>
-                </Col>
-            </Row>
-            <ButtonWrapper justifyCenter>
-                <Col md={4}>
-                    <Row>
-                        <Col md={6}>
-                            <GroupTitle>
-                                <Text weight="500" align="center">GROUP</Text>
-                            </GroupTitle>
-                            <Row>
-                                <Col md={6}>
-                                    <Button blue outline block small>
-                                        ENG
-                                        </Button>
-                                </Col>
-                                <Col md={6}>
-                                    <Button blue outline block small>
-                                        IND
-                                        </Button>
-                                </Col>
-                            </Row>
-                        </Col>
-                        <Col md={6}>
-                            <ChannelTitle>
-                                <Text weight="500" align="center">CHANNEL</Text>
-                            </ChannelTitle>
-                            <Row>
-                                <Col md={12}>
-                                    <Button blue outline block small>
-                                        PLAYGAMEICO
-                                    </Button>
-                                </Col>
-                            </Row>
-                        </Col>
-                    </Row>
-                </Col>
-            </ButtonWrapper>
+        <TeleTitleWrapper>
+          <TeleImage src={require('../../../../assets/images/icon_telegram_Color.png')} />
+          <TeleTitle as="h4" size="24px" weight="500">
+            JOIN OUT TELEGRAM
+          </TeleTitle>
+        </TeleTitleWrapper>
+        <Row justifyCenter>
+          <Col md={4}>
+            <ActionWrapper>
+              <GroupWrapper>
+                <Title as="h4" align="center" weight="400">
+                  GROUP
+                </Title>
+                <GroupButtonWrapper>
+                  <Button blue outline small>
+                    ENG
+                  </Button>
+                  <Button blue outline small>
+                    IND
+                  </Button>
+                </GroupButtonWrapper>
+              </GroupWrapper>
+              <ChannelWrapper>
+                <Title as="h4" align="center" weight="400">
+                  CHANNEL
+                </Title>
+                <ChannelButtonWrapper>
+                  <Button orange outline small>
+                    PLAYGAMEICO
+                  </Button>
+                </ChannelButtonWrapper>
+              </ChannelWrapper>
+            </ActionWrapper>
+          </Col>
+        </Row>
       </Wrapper>
     )
   }

@@ -5,7 +5,7 @@ import styled, { css } from 'styled-components'
 import GameList from './GameList';
 import ActionButton from './ActionButton';
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
     background: #F8F8F8;
     border-top: 1px solid #EEEEEE;
 `
