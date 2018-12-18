@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import styled, { css } from 'styled-components'
-import STYLES from '../../../../constants/styles';
+import styled from 'styled-components'
 import { Row, Col, Text, Button } from '../../../../components/common'
 
 
@@ -24,7 +23,7 @@ const TeleTitle = styled(Text)`
 `
 
 const TeleImage = styled.img`
-  padding: 10px;
+  margin-right: 10px;
 `
 
 const ActionWrapper = styled.div`

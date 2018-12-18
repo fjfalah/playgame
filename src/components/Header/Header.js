@@ -112,22 +112,11 @@ export default class Header extends Component {
     }
 
     this.onToggleMenu = this.onToggleMenu.bind(this)
-    this.onScroll = this.onScroll.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
   }
 
   onToggleMenu(){
     this.setState({toggle: this.state.toggle === 'none' ? 'flex' : 'none'})
-  }
-
-  onScroll(){
-    window.addEventListener("scroll",() => {
-      alert('wkwk')
-    });
-
-    function myFunction() {
-      document.getElementById("demo").innerHTML = "You scrolled in div.";
-    }
   }
 
   componentDidMount() {

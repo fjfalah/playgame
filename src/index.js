@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { Container, Text, Row, Col } from './components/common'
+import { Container } from './components/common'
 import About from './routes/about';
 import { Provider } from 'react-redux'
 import store from './store'

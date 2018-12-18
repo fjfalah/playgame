@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col, Text, Button } from '../../../../components/common';
-import STYLES from '../../../../constants/styles'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import GameList from './GameList';
 import ActionButton from './ActionButton';
 

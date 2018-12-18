@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Row, Col, Text, Button } from '../../../../components/common';
-import STYLES from '../../../../constants/styles'
 import TeleBox from './TeleBox';
 import img from '../../../../assets/images/img_bg_about.png'
 import BrandTitle from './BrandTitle'

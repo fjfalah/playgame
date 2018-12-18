@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { getGamesAction } from '../../../../actions/gameActions'
 import { connect } from 'react-redux'
 import GameCard from './GameCard'
-import STYLES from '../../../../constants/styles'
 
 const Wrapper = styled.div`
   padding: 20px 0;
@@ -37,7 +36,6 @@ class GameList extends Component {
 
   render() {
     const { games } = this.props.games
-    console.log(games)
     const gameList = games.map((game) => {
       return (
         <GameCard 
@@ -46,9 +44,7 @@ class GameList extends Component {
           title={game.name}
           desc={game.description}
         />
-        
       )
-        
     })  
     return (
       <Wrapper>
