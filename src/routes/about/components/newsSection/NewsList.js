@@ -5,7 +5,7 @@ import NewsCard from './NewsCard';
 const NewsListWrapper = styled.div`
   display: flex;
   flex-wrap: nowrap;
-  padding: 0;
+  padding: 0 20px;
   overflow-x: auto;
   overflow-y: hidden;
 `

@@ -7,6 +7,8 @@ const Navbar = styled.div`
   justify-content: center;
   padding: 40px 0;
   width: 100%;
+  z-index: 100;
+  background: rgba(255,255,255, 0.5);
 
   @media (max-width: 576px) {
     padding: 20px;

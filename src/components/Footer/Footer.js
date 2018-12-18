@@ -50,6 +50,7 @@ const PrivacyWrapper = styled.div`
   flex: 1;
   display: flex;
   justify-content: flex-start;
+  padding: 10px 0;
 
   @media (max-width: 576px) {
     justify-content: center;
