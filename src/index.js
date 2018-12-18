@@ -6,6 +6,23 @@ import { Provider } from 'react-redux'
 import store from './store'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+  }
+`
 
 export default class App extends Component {
   render() {
@@ -14,6 +31,7 @@ export default class App extends Component {
         <Header />
         <About />
         <Footer />
+        <GlobalStyle />
       </Container>
     )
   }
