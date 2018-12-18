@@ -28,7 +28,7 @@ npm start
 - [Webpack 4](https://webpack.js.org/)
 - [Styled Components](https://www.styled-components.com/)
 
-## Screen Shot
+## Screenshot
 
  - **Desktop**
 
