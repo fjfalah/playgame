@@ -63,7 +63,7 @@ const NavBrandResponsive = styled(NavBrand)`
   @media (max-width: 576px) {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-bottom: 20px;
   }
 `
