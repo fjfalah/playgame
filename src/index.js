@@ -8,20 +8,20 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 
 export default class App extends Component {
-    render() {
-        return (
-            <Container>
-                <Header />
-                <About />
-                <Footer />
-            </Container>
-        )
-    }
+  render() {
+    return (
+      <Container>
+        <Header />
+        <About />
+        <Footer />
+      </Container>
+    )
+  }
 }
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('root')
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
 )

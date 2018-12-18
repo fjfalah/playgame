@@ -3,10 +3,10 @@ import thunk from 'redux-thunk'
 import gameReducers from './reducers/gameReducers';
 
 const rootReducers = combineReducers({
-    gameStore: gameReducers
+  gameStore: gameReducers
 })
 
 export default createStore(
-    rootReducers,
-    applyMiddleware(thunk)
+  rootReducers,
+  applyMiddleware(thunk)
 )

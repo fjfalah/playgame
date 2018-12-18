@@ -3,44 +3,44 @@ import styled from 'styled-components'
 import { Text } from '../../../../components/common'
 import STYLES from '../../../../constants/styles';
 const TimelineTitleWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
 
-    @media (max-width: 576px) {
-      padding: 20px 0;
-      flex-direction: column;
-    }
+  @media (max-width: 576px) {
+    padding: 20px 0;
+    flex-direction: column;
+  }
 `
 
 const TitleWrapper = styled.div`
-    flex: 1;
-    flex-direction: column;
-    padding: 20px;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
 
-    @media (max-width: 576px) {
-      padding: 0 20px;
-    }
+  @media (max-width: 576px) {
+    padding: 0 20px;
+  }
 `
 
 const Title = styled(Text)`
-    line-height: 1;
+  line-height: 1;
 
-    @media (max-width: 576px) {
-      text-align: center;
+  @media (max-width: 576px) {
+    text-align: center;
     }
 `
 
 const TitleRightWrapper = styled.div`
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 
-    @media (max-width: 576px) {
-      flex-direction: column;
-    }
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
 `
 
 const TitleTimelineMonth = styled.div`
@@ -87,6 +87,6 @@ export default class TimelineTitle extends Component {
           </MoreEventsWrapper>
         </TitleRightWrapper>
       </TimelineTitleWrapper>
-        )
-      }
-    }
+    )
+  }
+}
