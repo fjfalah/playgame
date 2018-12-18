@@ -11,7 +11,8 @@ const FacebookButton = styled.button`
     width: 30px;
     height: 30px;
     border-radius: 30px;
-    border: 2px solid #3B5998;
+    border: 0;
+    padding: 3px;
     margin: 0 5px;
     background: #3B5998;
     outline: 0;
@@ -42,6 +43,10 @@ const MediumButton = styled(FacebookButton)`
     border: 1px solid rgba(151, 151, 151, 0.110875);
 `
 
+const Icon = styled.img`
+    height: 15px;
+`
+
 const SubscribeButton = styled.button`
     width: unset;
     height: 30px;
@@ -63,9 +68,7 @@ const SubscribeButton = styled.button`
     }
 
 `
-const Image = styled.img`
-  padding-top: 3px;
-`
+
 const ImageMail = styled.img`
     height: 10px;
     margin-right: 5px;
@@ -75,16 +78,16 @@ export default class SocialMedia extends Component {
     return (
       <Wrapper>
         <FacebookButton>
-          <Image src={require('../../assets/images/icon-facebook.svg')} />
+          <Icon src={require('../../assets/images/facebook-f-brands.svg')} />
         </FacebookButton>
         <YoutubeButton>
-          <Image src={require('../../assets/images/icon-youtube.svg')} />
+          <Icon src={require('../../assets/images/youtube-brands.svg')} />
         </YoutubeButton>
         <TwitterButton>
-          <Image src={require('../../assets/images/icon-twitter.svg')} />
+          <Icon src={require('../../assets/images/twitter-brands.svg')} />
         </TwitterButton>
         <MediumButton>
-          <Image src={require('../../assets/images/icon-medium.svg')} />
+          <Icon src={require('../../assets/images/icon-medium.svg')} />
         </MediumButton>
         <SubscribeButton>
           <ImageMail src={require('../../assets/images/icon-mail.svg')} />
