@@ -2,7 +2,7 @@
 
   
 
-> About Playgame page
+> playgame.com static page (About page) with responsive mobile view
 
   
 
